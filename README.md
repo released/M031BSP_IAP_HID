@@ -2,14 +2,11 @@
  M031BSP_IAP_HID
 
 
-update @ 2022/10/02
+update @ 2023/10/02
 
 1. add digit 1 under application code @ APROM 0x3000 address , to erase checksum and return to boot code @ APROM 0x00 address
 
-
-update @ 2022/01/12
-
-1. Scenario notice:
+2. Scenario notice:
 
 	- Boot loader project : IAP_HID 
 	
@@ -66,7 +63,7 @@ update @ 2022/01/12
 ![image](https://github.com/released/M031BSP_IAP_HID/blob/main/program_by_KEIL.jpg)
 		
 			
-2. Flash allocation start address
+3. Flash allocation start address
 
 	- APROM_Bootloader.bin : 0x0000 0x3000
 	
@@ -74,13 +71,13 @@ update @ 2022/01/12
 		
 	- Chcecksum storage : 0x1FFFC
 
-3. Function assignment
+4. Function assignment
 
 	- debug port : UART0 (PB12/PB13) , in Boot loader an Application code project
 	
 	- enable CRC , Timer1 module
 	
-4. Need to use ICP tool , to programm boot loader project file (APROM_Bootloader.bin , Application code )
+5. Need to use ICP tool , to programm boot loader project file (APROM_Bootloader.bin , Application code )
 
 below is boot loader APROM setting and program APROM , config 
 
